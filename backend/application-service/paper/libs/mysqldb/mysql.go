@@ -24,9 +24,9 @@ func (s *MySQL) String() string {
 
 const (
 	// MySQLMaxOpenConns 最大连接数
-	MySQLMaxOpenConns = 20
+	MySQLMaxOpenConns = 50
 	// MySQLMaxIdleConns 最大空闲连接数
-	MySQLMaxIdleConns = 5
+	MySQLMaxIdleConns = 10
 )
 
 func NewMySQLDBConn(connStr string, maxOpenConns, maxIdleConns int) *sqlx.DB {
